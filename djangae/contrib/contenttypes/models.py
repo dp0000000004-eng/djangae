@@ -21,7 +21,7 @@ class SimulatedContentTypeManager(models.Manager):
         self.model = model
 
     def _get_model(self):
-        """ If we're in a migration, then the 'fake' model class will be passed
+        """ If we're in a migration, then the `fake` model class will be passed
             into __init__   and we'll use that.  Otherwise we'll use the 'real'
             ContentType class.
         """
